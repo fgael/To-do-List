@@ -32,7 +32,7 @@
 
                 </div>
 
-                <button class="clear" @click="todos=[]; storeTodos(); this.count=1" v-if="todos.length">Clear All</button>
+                <button class="clear" @click="clearTodos(); this.count=1" v-if="todos.length">Clear All</button>
 
                 <input type="text" placeholder="Add new to-do" v-model="newTodo.text" @keyup.enter="addTodo(); storeTodos()">
                 <button class="add" @click="addTodo(); storeTodos()">Add</button>

@@ -23,6 +23,10 @@ const todosApp = {
     },
     storeTodos(){
       localStorage.setItem("todos", JSON.stringify(this.todos));
+    },
+    clearTodos(){
+      this.todos = [];
+      localStorage.removeItem("todos");
     }
   },
   created() {
