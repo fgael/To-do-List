@@ -27,7 +27,7 @@ const todosApp = {
   },
   created() {
     this.todos = localStorage.getItem("todos") ? JSON.parse(localStorage.getItem("todos")) : this.todos;
-    this.count = localStorage.getItem("todos") ? this.todos[this.todos.length -1].count +1 : this.count;
+    this.count = localStorage.getItem("todos") ? this.todos[this.todos.length -1].count +1 : 1;
   }
 };
 
